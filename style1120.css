@@ -15,10 +15,8 @@
     .links {
         flex-wrap: wrap;
         justify-content: space-around;
-        /* align-items: center; */
         margin: 0;
         padding: 0;
-        /* margin-left: 17px; */
         row-gap: 15px;
     }
     .links__items:last-child {
