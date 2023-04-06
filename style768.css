@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+    body {
+        min-width: 768px;
+    }
+    .width768 {
+        display: block;
+    }
+    .header__item {
+        margin-left: 20px;
+    }
+    .header__vdecorate.width768 {
+        margin-right: 20px;
+    }
+    .header__item:last-child {
+        margin-right: 24px;
+    }
+    .header__call {
+        margin-left: auto;
+    }
+    .post {
+        flex-direction: row;
+        margin-top: 32px;
+        margin-left: 8px;
+    }
+    .post__img {
+        width: 360px;
+        height: auto;
+        margin-right: 40px;
+    }
+    .links__items {
+        margin-right: 25px;
+    }
+}
