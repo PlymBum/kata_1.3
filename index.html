@@ -7,14 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект 1.3</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style768.css">
-    <link rel="stylesheet" href="style1120.css">
+    <!-- <link rel="stylesheet" href="style768.css"> -->
+    <!-- <link rel="stylesheet" href="style1120.css"> -->
     <link rel="stylesheet" href="assets/fonts/TTLakes/stylesheet.css">
 </head>
 
 <body>
     <header class="header">
-        <ul class="header__items">
+        <div class="header__burger">
+            <button class="header__button menu-burger"><img src="assets/img/burger.svg" alt="menu-burger"></button>
+        </div>
+
+        <a href="#" class="header__logo"><img src="assets/img/logo.svg" alt="logo"></a>
+
+        <ul class="header__actions">
+            <li>
+                <button class="header__button">
+                    <img src="assets/img/call.svg" alt="call">
+                </button>
+            </li>
+            <li>
+                <button class="header__button">
+                    <img src="assets/img/chat.svg" alt="chat">
+                </button>
+            </li>
+            <li>
+                <button class="header__button">
+                    <img src="assets/img/profile.svg" alt="profile">
+                </button>
+            </li>
+            <li>
+                <button class="header__button">
+                    <img src="assets/img/repair.svg" alt="repair">
+                </button>
+            </li>
+            <li>
+                <button class="header__button">
+                    <img src="assets/img/checkstatus.svg" alt="checkstatus">
+                </button>
+            </li>
+        </ul>
+
+        <!-- <ul class="header__items">
             <li class="header__item header__burger"><img src="assets/img/burger.png" alt="menu"></li>
             <li class="header__item header__vdecorate width768"><img src="assets/img/divider.png" alt=""></li>
             <li class="header__logo">
@@ -36,9 +70,30 @@
             <li class="header__item header__checkstatus">
                 <a href="#"><img src="assets/img/checkstatus.png" alt=""></a>
             </li>
-        </ul>
+        </ul> -->
     </header>
-    <section class="content">
+    <main class="main__services services">
+        <h1 class="services__title">
+            Услуги и сервисы
+        </h1>
+        <nav class="services__navigation">
+            <ul class="services__list">
+                <li class="services__item services__item_active">Ремонтируемые бренды</li>
+                <li class="services__item">Дополнительные услуги</li>
+                <li class="services__item">Ремонтируемые устройства</li>
+                <li class="services__item">Цены на услуги</li>
+                <li class="services__item">Адреса сервисных центров</li>
+                <li class="services__item">Специальные цены</li>
+                <li class="services__item">Отзывы</li>
+            </ul>
+        </nav>
+        <section class="services__about about">
+            <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+            <button class="about__show-more-btn">Читать далее</button>
+            <img src="assets/img/img_content.png" alt="" class="about__img">
+        </section>
+    </main>
+    <!-- <section class="content">
         <section class="title">
             <img class="title__decorate" src="assets/img/highlight.png" alt="">
             <h1>Услуги и сервисы</h1>
@@ -87,7 +142,7 @@
             </div>
             <img src="assets/img/img_content.png" alt="" class="post__img">
         </section>
-    </section>
+    </section> -->
 
 </body>
 
