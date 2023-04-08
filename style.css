@@ -234,4 +234,8 @@ li {
         overflow: none;
         white-space: wrap;
     }
+    .about__img {
+        width: 532px;
+        height: auto;
+    }
 }
