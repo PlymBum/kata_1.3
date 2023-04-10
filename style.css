@@ -22,7 +22,8 @@ li {
     box-sizing: border-box;
     height: 88px;
     margin-left: 16px;
-    margin-bottom: 24px;
+    padding-top: 18px;
+    margin-bottom: 18px;
 }
 
 .header__button {
@@ -32,14 +33,18 @@ li {
     margin-right: 16px;
 }
 
+.header__button:hover {
+    margin-bottom: 10px;
+}
+
 .main__services {
     background-color: #F8F8F8;
 }
 
 .services {
     display: flex;
-    margin-bottom: 24px;
     flex-direction: column;
+    border-top: 1px #d9fff5 solid;
 }
 
 .services__title {
@@ -62,12 +67,24 @@ li {
     vertical-align: top;
 }
 
+.services__btn:hover {
+    color: tomato;
+}
+
+.services__btn:focus {
+    outline: none;
+    height: 42px;
+    color: tomato;
+    border: 2px pink solid;
+    border-radius: 30px;
+}
+
 .services__btn-repair {
     display: none;
     background-image: url(assets/img/repair.svg);
     background-position: right;
     background-repeat: no-repeat;
-    width: 173px;
+    width: 180px;
     height: 40px;
     padding-right: 48px;
     font-family: 'TT Lakes';
@@ -128,6 +145,16 @@ li {
     padding-right: 9px;
 }
 
+.services__item:hover {
+    color: black;
+    font-weight: 555;
+}
+
+.services__item:focus {
+    color: black;
+    font-weight: 555;
+}
+
 .services__item_active {
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
@@ -167,11 +194,19 @@ li {
     align-self: flex-start;
 }
 
+.about__show-more-btn:hover {
+    color: black;
+    font-weight: 555;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+
+}
 .about__img {
     width: 320px;
     height: auto;
 }
-
 .header__actions {
     padding: 0;
     display: flex;
@@ -179,7 +214,6 @@ li {
     margin-left: auto;
     align-items: center;
 }
-
 .button-repair::before {
     content: "";
     display: inline-block;
@@ -190,15 +224,14 @@ li {
     border-radius: 1px;
     align-self: center;
 }
-
 .header__actions>li:nth-child(-n+3) {
     display: none;
 }
-
 @media (min-width: 768px) {
     .header__actions>li:nth-child(-n+3) {
         display: block;
     }
+    
     .menu-burger::after {
         content: "";
         display: inline-block;
@@ -209,31 +242,36 @@ li {
         border-radius: 1px;
         align-self: center;
     }
+    
     .about {
         flex-direction: row;
     }
+    
     .about__img {
         width: 360px;
         height: auto;
     }
 }
-
 @media (min-width: 1120px) {
     .main__services {
         padding-top: 42px;
     }
+    
     .header {
         display: none;
     }
+    
     .services__btn-repair,
     .services__btn-checkstatus {
         display: block;
     }
+    
     .services__list {
         flex-wrap: wrap;
         overflow: none;
         white-space: wrap;
     }
+    
     .about__img {
         width: 532px;
         height: auto;
