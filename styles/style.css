@@ -5,6 +5,7 @@ body {
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    height: 100vh;
 }
 
 a {
@@ -42,32 +43,32 @@ li {
 }
 
 .menu-burger {
-    background-image: url(assets/img/burger.svg);
+    background-image: url(../assets/img/burger.svg);
     background-repeat: no-repeat;
 }
 
 .button-checkstatus {
-    background-image: url(assets/img/checkstatus.svg);
+    background-image: url(../assets/img/checkstatus.svg);
     background-repeat: no-repeat;
 }
 
 .button-repair {
-    background-image: url(assets/img/repair.svg);
+    background-image: url(../assets/img/repair.svg);
     background-repeat: no-repeat;
 }
 
 .button-profile {
-    background-image: url(assets/img/profile.svg);
+    background-image: url(../assets/img/profile.svg);
     background-repeat: no-repeat;
 }
 
 .button-chat {
-    background-image: url(assets/img/chat.svg);
+    background-image: url(../assets/img/chat.svg);
     background-repeat: no-repeat;
 }
 
 .button-call {
-    background-image: url(assets/img/call.svg);
+    background-image: url(../assets/img/call.svg);
     background-repeat: no-repeat;
 }
 
@@ -143,7 +144,7 @@ li {
 
 .services__btn-repair {
     display: none;
-    background-image: url(assets/img/repair.svg);
+    background-image: url(../assets/img/repair.svg);
     background-position: right;
     background-repeat: no-repeat;
     width: 180px;
@@ -156,7 +157,7 @@ li {
 
 .services__btn-checkstatus {
     display: none;
-    background-image: url(assets/img/checkstatus.svg);
+    background-image: url(../assets/img/checkstatus.svg);
     background-position: right;
     background-repeat: no-repeat;
     width: 173px;
@@ -251,7 +252,7 @@ li {
     display: inline-block;
     background-color: inherit;
     border: none;
-    background-image: url(assets/img/expand.svg);
+    background-image: url(../assets/img/expand.svg);
     background-repeat: no-repeat;
     margin-bottom: 16px;
     height: 24px;

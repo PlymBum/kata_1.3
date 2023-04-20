@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Lakes';
+    float: left;
+    width: 320px;
+    height: 1024px;
+    /* background-color: black; */
+}
+
+.btn-round {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FF3E79;
+}
+
+.header {
+    display: flex;
+    height: 88px;
+    align-items: center;
+}
+
+.header__btn {
+    position: relative;
+}
+
+.header__btn:first-child {
+    margin-left: 24px;
+}
+
+.header__btn:last-child {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+.header__logo {
+    display: inline-block;
+    margin-left: 17px;
+    width: 97px;
+    height: 55px;
+    background: url(../assets/img/logo.svg) no-repeat;
+}
+
+.header__btn--close::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 21px;
+    background: #FFFFFF;
+    transform: translateX(-11px) translateY(-1px) rotate(-45deg);
+}
+
+.header__btn--close::after {
+    /* есть смысл делать так?  проще и быстрее добавить свг в кнопку как с кнопкой ниже*/
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 21px;
+    background: #FFFFFF;
+    transform: translateX(-11px) translateY(-1px) rotate(45deg);
+}
+
+.header__btn--search {
+    background: url(../assets/img/checkstatus.svg) no-repeat 50% 50%;
+}
