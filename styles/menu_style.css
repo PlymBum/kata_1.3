@@ -146,7 +146,9 @@ a {
 .footer {}
 
 .footer__contact-us {
-    float: left;
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
     margin-left: 8px;
     margin-bottom: 16px;
 }
@@ -158,13 +160,15 @@ a {
 
 /* .footer__btn--call {
     background: url(../assets/img/call.svg) no-repeat 50% 50%;
-}
+}*/
 
-.footer__btn--msg {
+
+/* .footer__btn--msg {
     background: url(../assets/img/chat.svg) no-repeat 50% 50%;
-}
+} */
 
-.footer__btn--profile {
+
+/*.footer__btn--profile {
     background: url(../assets/img/profile.svg) no-repeat 50% 50%;
 } */
 
