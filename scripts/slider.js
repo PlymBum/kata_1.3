@@ -1,8 +1,37 @@
-document.getElementById('slider__btn-show-more').onclick = function() {
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+    .test(navigator.userAgent)) {
 
-    //console.log(document.getElementById('slider__items').className)
-    if (document.getElementById('slider__items').className != 'slider__items slider__items--show-all') {
-        document.getElementById('slider__items').classList.add('slider__items--show-all');
-    } else
-        document.getElementById('slider__items').classList.remove('slider__items--show-all');
+    const swiper = new Swiper('.swiper', {
+
+        direction: 'horizontal',
+        loop: true,
+        speed: 500,
+        effect: 'slider',
+        slidesPerView: 'auto',
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+
+    });
+
 }
+
+let btnShowMore = document.querySelector('.slider__btn-show-more');
+let sliderItems = document.querySelector('.slider__items');
+
+
+btnShowMore.addEventListener('click', function() {
+
+    if (sliderItems.classList.contains('slider__items--show-all')) {
+        sliderItems.classList.remove('slider__items--show-all');
+        btnShowMore.classList.remove('slider__btn-show-more--open')
+        btnShowMore.textContent = "Показать все"
+
+    } else {
+        sliderItems.classList.add('slider__items--show-all');
+        btnShowMore.textContent = "Скрыть"
+        btnShowMore.classList.add('slider__btn-show-more--open')
+    }
+});
